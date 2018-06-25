@@ -19,8 +19,8 @@ class SocialPushFirebaseMessagingService : FirebaseMessagingService() {
     }
 
     private fun sendMyNotification(message: String?) {
-        // Start MainActivity, invalidation of token and re-entry to LoginActivity handled there.
-        val intent = Intent(this, MainActivity::class.java)
+        // Get MainActivity intent, token-invalidation and re-entry to LoginActivity handled there.
+        val intent = MainActivity.newIntent(this)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         val pendingIntent = PendingIntent.getActivity(
                 this,
