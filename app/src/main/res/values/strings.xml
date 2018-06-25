@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SocialPush</string>
+
+    <string name="facebook_app_id">410336279444000</string>
+    <string name="fb_login_protocol_scheme">fb410336279444000</string>
+</resources>
